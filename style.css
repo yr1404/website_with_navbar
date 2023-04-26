@@ -1,42 +1,45 @@
+* {
+    list-style: none;
+}
+
 body {
     overflow-x: hidden;
 }
 
-.header {
+header {
+    padding: 10px 50px;
+    font-family: sans-serif;
+    box-shadow: 0px 4px 3px -1px rgba(0, 0, 0, 0.2);
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: #F9F9FB;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+.com {
+    color: blueviolet;
+}
+
+.bars {
+    display: none;
+}
+
+.navbar ul {
     display: flex;
     padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: sans-serif;
-    /* border-bottom: 1px solid black; */
-    box-shadow: 0px 4px 3px -1px rgba(0, 0, 0, 0.2);
-    position: sticky;
-    top: 0;
-    background-color: white;
-    position: -webkit-sticky;
-    z-index: 1;
 }
 
-.im1 {
-    object-fit: contain;
-}
-
-.navbar {
-    flex: 10%;
-}
-
-.list {
-    padding-top: 7px;
-    display: flex;
-    flex: 1;
-    white-space: nowrap;
-}
-
-.list li {
-    list-style-type: none;
-    margin-left: 10px;
-    padding: 2px 28px;
-    flex-grow: 10;
-    float: right;
+.navbar ul li {
+    padding: 5px 10px;
 }
 
 a {
@@ -68,25 +71,12 @@ a {
     color: #fff;
 }
 
-.cname {
-    padding-top: 6px;
-}
-
-.header #navbar {
-    width: 93%;
-    margin-left: 50px;
-    /* margin-right: 50px; */
-    display: flex;
-}
 
 .row {
     display: flex;
     /* float: left; */
 }
 
-.com {
-    color: blueviolet;
-}
 
 .column1 {
     /* width: 50%; */
@@ -208,42 +198,34 @@ h3 {
     .col-foot-right {
         padding-block: 10px;
     }
-    .list li {
-        margin-left: 0px;
-        padding-right: 0px;
-    }
-    .list .list {
-        padding-right: 15px;
-    }
-}
 
-.navigation {
-    display: flex;
-}
-
-.li2 {
-    flex: 10%;
-}
-
-.li1 {
-    flex: 90%;
-}
-
-.bars {
-    display: none;
-}
-
-@media only screen and (max-width: 1040px) {
-    .li1 {
-        display: none;
-    }
     .bars {
         display: block;
-        float: right;
-        padding-right: 20px;
-        padding-top: 20px;
+        padding-top: 10px;
+        cursor: pointer;
     }
-    .header #navbar {
-        margin-left: 20px;
+
+    header nav {
+        margin: 0;
+        position: absolute;
+        top: -350%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #F9F9F9;
+        padding: 30px;
+        transition: 0.5s;
+        text-align: center;
+        z-index: -1;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        row-gap: 10px;
+
+    }
+
+    header nav.active {
+        top: 70px;
     }
 }
