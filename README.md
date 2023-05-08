@@ -1,1 +1,3 @@
-# website_with_navbar
+# Landing page of DigitalCompany website  
+This is the code for a website with a responsive navbar i.e. as the width of the website becomes less than the threshold defined, the hamburger icon appears.  
+So, the outlying menus are shown when the hamburger is clicked.
