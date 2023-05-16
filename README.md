@@ -1,3 +1,11 @@
 # Landing page of DigitalCompany  
-This is the code for a website with a responsive navbar i.e. as the width of the website becomes less than the threshold defined, the hamburger icon appears.  
-So, the outlying menus are shown when the hamburger icon is clicked.
+<!-- [![GitHub stars](https://img.shields.io/github/stars/yr1404/website_with_navbar)](https://github.com/yr1404/website_with_navbar/stargazers) -->
+
+This repository contains the code for a basic website template with a responsive navigation bar. The template is built using HTML, CSS, and JavaScript, and it provides a simple and clean layout that can be customized for various purposes.
+
+## Features
+
+- Responsive navigation bar that adapts to different screen sizes
+- Smooth scrolling to different sections of the page
+- Mobile-friendly design
+- Easily customizable and extensible
